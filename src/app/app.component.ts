@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, 
+  imports: [CommonModule, FlexLayoutModule], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'responsive-layout-app';
+  title = 'Responsive Layout App';
 }
