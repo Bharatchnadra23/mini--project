@@ -1,5 +1,7 @@
 {
+
   "name": "contact-book",
+
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +9,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+
     "serve:ssr:contact-book": "node dist/contact-book/server/server.mjs"
+
   },
   "private": true,
   "dependencies": {
@@ -16,7 +20,9 @@
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
     "@angular/forms": "^19.2.0",
+
     "@angular/material": "^19.2.2",
+
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/platform-server": "^19.2.0",
@@ -42,4 +48,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2"
   }
+
+}
+
 }

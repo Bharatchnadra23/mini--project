@@ -14,16 +14,29 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
+
   it(`should have the 'contact-book' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('contact-book');
+
+  it(`should have the 'responsive-layout-app' title`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('responsive-layout-app');
+
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, contact-book');
   });
 });
+
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, responsive-layout-app');
+  });
+});
+
