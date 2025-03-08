@@ -3,7 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "responsive-layout-app": {
+
+    "contact-book": {
+
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +15,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/responsive-layout-app",
+
+            "outputPath": "dist/contact-book",
+
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,6 +31,9 @@
               }
             ],
             "styles": [
+
+              "@angular/material/prebuilt-themes/cyan-orange.css",
+
               "src/styles.css"
             ],
             "scripts": [],
@@ -64,10 +71,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+
+              "buildTarget": "contact-book:build:production"
+            },
+            "development": {
+              "buildTarget": "contact-book:build:development"
+
               "buildTarget": "responsive-layout-app:build:production"
             },
             "development": {
               "buildTarget": "responsive-layout-app:build:development"
+
             }
           },
           "defaultConfiguration": "development"
@@ -90,6 +104,9 @@
               }
             ],
             "styles": [
+
+              "@angular/material/prebuilt-themes/cyan-orange.css",
+
               "src/styles.css"
             ],
             "scripts": []
@@ -99,6 +116,10 @@
     }
   },
   "cli": {
+
+    "analytics": "14285ff5-2c9d-45fc-a99f-ccdce0a00f18"
+=======
     "analytics": "8e29569c-0cb3-4f4d-842a-7a61aab4863f"
+
   }
 }
